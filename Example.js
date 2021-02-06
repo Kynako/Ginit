@@ -1,16 +1,11 @@
-# Ginit
-Import scripts from guthub easily
-
-## Usage
-```javascript
 let list = [
   'Kynako/Ginit/main/Ginit.js',
   'Kynako/Ginit/main/Example.js',
   {
-    dir: 'GinitTestDir/',
+    dir: 'GinitTestDirOniCloud/',
     list: [
       'Kynako/Ginit/main/LICENSE',
-      'Kynako/Ginit/main/README.md'
+      'Kynako/Ginit/main/README.md',
       {
         dir: 'images',
         list: [
@@ -20,12 +15,6 @@ let list = [
     ]
   }
 ];
+const Ginit = importModule('Ginit')
 const ginit = new Ginit();
 await ginit.set(list);
-```
-
-## Requirememt
-- Scriptable v1.6.3
-
-## License
-[MIT license](/LICENSE)
