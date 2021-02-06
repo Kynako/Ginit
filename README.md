@@ -5,7 +5,6 @@ Import scripts from guthub easily
 ```javascript
 let list = [
   'Kynako/Ginit/main/Ginit.js',
-  'Kynako/Ginit/main/Example.js',
   {
     dir: 'GinitTestDir/',
     list: [
@@ -20,10 +19,12 @@ let list = [
     ]
   }
 ];
+const Ginit = importModule('__Ginit_FilePath__')
 const ginit = new Ginit();
 await ginit.set(list);
 ```
 
+Also you can try quickly with [Usage.js](/Usage.js)
 ## Requirememt
 - Scriptable v1.6.3
 
