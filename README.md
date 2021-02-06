@@ -1,6 +1,9 @@
 # Ginit
 Import scripts from guthub easily
 
+## Overview
+![Image](images/OVERVIEW_1.png)
+
 ## Usage
 ```javascript
 let list = [
@@ -19,9 +22,10 @@ let list = [
     ]
   }
 ];
+const fm = FileManager.iCloud()
 const Ginit = importModule('__Ginit_FilePath__')
 const ginit = new Ginit();
-await ginit.set(list);
+await ginit.set(list, fm.documentDirectory() + '/');
 ```
 
 Also you can try quickly with [Usage.js](/Usage.js)
